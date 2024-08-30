@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Cabecalho from './components/Cabecalho';
 import Links from './components/Links.jsx';
+import Body from './components/Body.jsx';
 import './App.css';
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
     <>
       <Cabecalho />
       <Links />
+      <Body />
     </>
   );
 }

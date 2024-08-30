@@ -1,4 +1,12 @@
 .Cabecalho-container {
 
-    background-color: rgb(44, 130, 204);
+    background-color: var(--cor-tres);
+    color: var(--cor-um);
+    margin: auto;
+}
+
+h1 {
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 1%;
 }
