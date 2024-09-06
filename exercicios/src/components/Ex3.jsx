@@ -30,7 +30,7 @@ function Ex3() {
 
   return (
     <div className='exercicios'>
-        <h2>Não tem garçom de cara feia</h2>
+        <h2>Exercício 3</h2>
         <button onClick={verifica}>Verificar</button>
         <p>{result}</p>
     </div>

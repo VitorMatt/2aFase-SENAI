@@ -20,7 +20,7 @@ function Ex2() {
 
   return (
     <div className='exercicios'>
-        <h2>Dois copos meio cheios</h2>
+        <h2>Exercício 2</h2>
         <button onClick={verificaNum}>Verificar Número</button>
         <p>{result}</p>
     </div>
