@@ -44,7 +44,15 @@ function Ex7() {
       <h2>Exercício 7</h2><br />
       <button onClick={calcMedia}>Calcular</button>
       <p>Relatório:</p><br />
-      <p>Notas: {notas[0]}, {notas[1]}</p><br />
+      <p>Notas: {
+        mediaFinal!=null
+        ?
+        notas[0] +', ' + notas[1]
+        :
+        ''
+      }
+     </p><br />
+        
       <p>Média: {mediaFinal}</p><br />
       <p>Conceito: {conceito}</p>
     </div>
