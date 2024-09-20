@@ -27,10 +27,19 @@ function Ex2() {
         let quantidadeMulheres = 0;
         let count = 0;
 
+        altura = Number(prompt('Digite a altura'));
+        genero = Number(prompt('Digite o seu gênero\n 0=masc, 1=fem.'));
+            alturas.push({
+                genero: genero,
+                altura: altura
+            });
+
+        setMenorAltura(altura);
+
         do {
 
             altura = Number(prompt('Digite a altura'));
-            genero = prompt('Digite o gênero');
+            genero = Number(prompt('Digite o seu gênero\n 0=masc, 1=fem.'));
             alturas.push({
                 genero: genero,
                 altura: altura
@@ -38,32 +47,27 @@ function Ex2() {
             
             count++;
 
-        } while (count<10);
+        } while (count<9);
 
         for (let i=0; i<alturas.length; i++) {
 
-            if (alturas[i].genero=='f') {
+            if (alturas[i].genero==1) {
 
                 somaAlturaMulheres+= alturas[i].altura;
                 quantidadeMulheres++;
             }
 
-            if (alturas[i].genero=='m') {
+            if (alturas[i].genero==0) {
 
                 quantidadeHomens++;
             }
 
             somaAlturas+= alturas[i].altura;
 
-            if (menorAltura==null || i==0) {
+            if (alturas[i].altura<=menorAltura) {
 
                 setMenorAltura(alturas[i].altura);
-            } else if (alturas[i].altura<=menorAltura) {
-
-                setMenorAltura(alturas[i].altura);
-            }
-            
-            if (alturas[i].altura>=maiorAltura) {
+            } else if (alturas[i].altura>=maiorAltura) {
 
                 setMaiorAltura(alturas[i].altura);
             }                
@@ -81,11 +85,11 @@ function Ex2() {
   return (
     <div className='exercicios'>
         <button onClick={calc}>Calcular</button><br />
-        <p>Média de altura da população: {mediaAlturaPopulacao}</p>
-        <p>Média de altura das mulheres: {mediaAlturaMulheres}</p>
-        <p>Percentual de Homens: {percentualHomens}</p>
-        <p>Maior altura: {maiorAltura}</p>
-        <p>Menor altura: {menorAltura}</p>
+        <p>Média de altura da população: {mediaAlturaPopulacao}m</p>
+        <p>Média de altura das mulheres: {mediaAlturaMulheres}m</p>
+        <p>Percentual de Homens: {percentualHomens}%</p>
+        <p>Maior altura: {maiorAltura}m</p>
+        <p>Menor altura: {menorAltura}m</p>
     </div>
   );
 };
