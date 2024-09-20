@@ -18,7 +18,7 @@ function Ex3() {
         let alturaEnzo = 1.40;
         let anos;
 
-        for (let i=1; alturaEnzo<alturaValentina; i++) {
+        for (let i=1; alturaEnzo<=alturaValentina; i++) {
             
             alturaEnzo+= crescimentoEnzo;
             alturaValentina+= crescimentoValentina;
