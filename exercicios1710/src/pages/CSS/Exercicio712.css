@@ -1,0 +1,93 @@
+body {
+
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+*{
+
+    outline: none;
+}
+
+.exercicio-container {
+
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.body-container {
+    
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content: space-between;
+    font-family: "Roboto", sans-serif;
+}
+
+.input-container {
+
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+    padding-bottom: 15%;
+}
+
+.input-container input {
+
+    width: 70%;
+    border: none;
+    border-bottom: 1px solid;
+    padding-top: 5%;
+    font-size: 20px;
+}
+
+.input-container label {
+
+    font-size: 20px;
+}
+
+.buttons-container {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons-container button {
+
+    width: 80%;
+    padding: 3%;
+    border: none;
+    margin-bottom: 5%;
+}
+
+p {
+
+    margin: auto;
+    font-size: 20px;
+}
+
+.result-container {
+
+    display: flex;
+    width: 60%;
+    margin: auto;
+    align-items: center;
+}
+
+.buttons-container button:hover {
+
+    outline: 1px solid;
+}
+
+.buttons-container button:focus {
+
+    outline: 1px solid;
+}
