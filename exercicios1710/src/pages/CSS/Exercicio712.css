@@ -1,17 +1,17 @@
 body {
-
+    
     margin: auto;
     align-items: center;
     justify-content: center;
 }
 
 *{
-
+    
     outline: none;
 }
 
 .exercicio-container {
-
+    
     display: flex;
     flex-direction: column;
     margin: auto;
@@ -77,7 +77,7 @@ p {
 .result-container {
 
     display: flex;
-    width: 60%;
+    width: fit-content;
     margin: auto;
     align-items: center;
 }
