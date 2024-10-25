@@ -1,0 +1,19 @@
+.container-user {
+
+    background-color: aquamarine;
+    border: none;
+    border-radius: 6px;
+    width: 30%;
+}
+
+.users{
+
+    padding-top: 25%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    width: 100%;
+}
